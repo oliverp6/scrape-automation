@@ -22,6 +22,9 @@ jobs:
       run: |
         R -e 'install.packages("tidyverse")'
         R -e 'install.packages("rvest")'
+        R -e 'install.packages("worldfootballR")'
+        R -e 'install.packages("lubridate")'        
+        
     # Run R script
     - name: Scrape
       run: Rscript sitemap_scraping.R
